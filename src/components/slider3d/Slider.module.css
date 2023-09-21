@@ -1,0 +1,60 @@
+/* styles/Slider.module.css */
+
+.container-3d {
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slider3d {
+    position: relative;
+    width: 50vmin;
+    height: 50vmin;
+    perspective: 800px;
+  }
+  
+  .slider3d_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.75s;
+  }
+  
+  .slider3d_wrap > * {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.2vmin solid #777;
+    background-color: #ddd;
+  }
+  
+  .slider3d_left,
+  .slider3d_right {
+    position: absolute;
+    bottom: calc(100px + 10vmin);
+    width: 8vmin;
+    height: 8vmin;
+    user-select: none;
+    cursor: pointer;
+    border: 2px solid red;
+  }
+  
+  .slider3d_left {
+    left: 15vmin;
+  }
+  
+  .slider3d_right {
+    right: 15vmin;
+  }
+  
+  /* Rest of your CSS styles */
+  
+  /* Add more styles as needed */
+  

@@ -1,0 +1,9 @@
+.horus {
+    font-family: HORUS;
+}
+
+@media screen and (min-width: 770px) and (max-width: 1900px) {
+    .containerInformation {
+        width: 90%;
+    }
+  }

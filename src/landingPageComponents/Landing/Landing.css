@@ -1,0 +1,122 @@
+.horus {
+  font-family: HORUS;
+}
+  
+  /* Other CSS styles for your components... */
+  .parallax-container{
+    /* background: linear-gradient(270deg, #000 49.89%, rgba(24, 19, 13, 0.00) 129.28%); */
+background-color: #0c0c0c;
+    height:100vh;
+    width: 100%;
+    margin-inline: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+.grad-bg{
+      background: linear-gradient(270deg, #000 49.89%, rgba(24, 19, 13, 0.00) 129.28%);
+
+}
+
+  .bg{
+    position: absolute;
+    top: 0;
+    /* left: ; */
+    width: 105%;
+    width: 1200px;
+
+    margin-inline: auto;
+    transition: transform 1s ease;
+  }
+  .bg-move{
+    transform: translate(-20px,0px);
+  }
+
+  @media (min-width: 3000px) {
+    .social-icons img {
+      width: 100px; /* Adjust the size as per your preference */
+      height: 100px; /* Adjust the size as per your preference */
+      padding: 22px;
+      border-radius: 20px
+    }
+  }
+  @media (min-width: 2500px) {
+    .social-icons img {
+      width: 75px; /* Adjust the size as per your preference */
+      height: 75px; /* Adjust the size as per your preference */
+      padding: 20px;
+      border-radius: 15px
+    }
+  }
+
+  @media (min-width: 3000px) {
+    .rise-font > h1 {
+      font-size: 5rem;
+    }
+    .rise-p {
+      font-size: 2rem;
+      line-height: 3rem
+    }
+    .rise-btn {
+      font-size: 3rem;
+      padding: 2rem;
+      border-radius: 1rem
+    }
+  }
+
+  /* .hero-move{
+    transform: translate(-50px,0px);
+  } */
+  .overlay{
+    background-image: url(/images/landing-page/Overlay.png);
+   /* background-size: 100% 100%; */
+    width: 200%;
+    height: 100%;
+    transform: translate(500px,0px);
+    z-index: 99;
+    mix-blend-mode: screen;
+    transition: transform 1s ease;
+
+  }
+  /* .overlay-move{
+    transform: translate(-500px,0px);
+
+  } */
+.h1-heading{
+  font-family: MADE TOMMY;
+font-size: 50px;
+font-style: normal;
+font-weight: 600;
+line-height: 114%; /* 68.4px */
+letter-spacing: -1.2px;
+  background: linear-gradient(247deg, #93835C -21.26%, #E7DBC9 105.78%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.contant{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  display: flex;
+  align-items: center;
+  gap:10px;
+  z-index: 999;
+  width: 60%;
+}
+
+
+.mob-backgournd{
+  background-image: url(/images/landing-page/mob-bg.png);
+background-size: 100% 100%;
+}
+.mob-content{
+position: absolute;
+bottom: 10%;
+}
+@media screen and (max-width:1350px) {
+.contant{
+  width: 80%;
+}}

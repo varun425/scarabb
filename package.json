@@ -1,0 +1,39 @@
+{
+  "name": "scarab",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ethersproject/providers": "^5.7.2",
+    "@madzadev/image-slider": "^1.0.9",
+    "@metamask/onboarding": "^1.0.1",
+    "@walletconnect/universal-provider": "^2.10.1",
+    "@web3-react/core": "^8.2.0",
+    "@web3-react/metamask": "^8.2.3",
+    "@web3-react/walletconnect-v2": "^8.5.0",
+    "autoprefixer": "10.4.14",
+    "dotenv": "^16.3.1",
+    "eventemitter3": "^5.0.1",
+    "i": "^0.3.7",
+    "next": "13.4.12",
+    "npm": "^10.1.0",
+    "postcss": "8.4.27",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^13.0.1",
+    "react-icons": "^4.11.0",
+    "react-slick": "^0.29.0",
+    "react-spring": "9.3.2",
+    "react-spring-3d-carousel": "1.2.1",
+    "sib-api-v3-sdk": "^8.5.0",
+    "slick-carousel": "^1.8.1",
+    "tailwindcss": "3.3.3",
+    "uuid": "8.3.2",
+    "web3": "^4.1.1"
+  }
+}

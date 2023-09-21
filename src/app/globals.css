@@ -1,0 +1,411 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* border: 1px solid red; */
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+:root {
+  --text-gradient: linear-gradient(210deg, #93835C 0%, #E7DBC9 100%);
+}
+
+
+@font-face {
+  font-family: MADE TOMMY;
+  src: url(/font/made_tommy/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+}
+
+
+@font-face {
+  font-family: HORUS;
+  src: url(/font/HORUS\ NEW.OTF);
+}
+
+
+body{
+  color: white;
+  /* background-image: url(/images/main-bg.png);
+  background-size: 100% 100%; */
+  height: 100vh;
+  background-color: black;
+}
+
+.dapp-bg{
+  background-image: url(/images/main-bg.png);
+  background-size: 100% 100%;
+  height: 100vh;
+
+}
+
+p{
+  font-family: MADE TOMMY;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.24px;
+  background: linear-gradient(101deg, rgba(231, 219, 201, 1.00) 0%, rgba(231, 219, 201, 0.00) 210%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+h2{
+  font-family: MADE TOMMY;
+font-size: 22px;
+  background: linear-gradient(102deg, #FEF2E0 0%,#fef2e0db 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solidred;
+}
+h3{
+  color: #E7DBC9;
+font-family: HORUS;
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.525px;
+background: linear-gradient(90deg, #E7DBC9 0%, rgba(231, 219, 201, 0.00) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+h4{
+  font-family: HORUS;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0.3px;
+background: linear-gradient(90deg, #E7DBC9 0%, rgba(231, 219, 201, 0.00) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+h5{
+  font-family: MADE TOMMY;
+  color: #f3efea;
+
+}
+.scane{
+  /* width: 240px;
+  height: 90px; */
+  border-radius:18px;
+  /* margin: 40px auto; */
+  perspective: 500px;
+}
+
+
+
+.left-btn{
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  background: rgba(7, 7, 4, 0.50);  
+backdrop-filter: blur(20px);
+transform-origin: right;
+color: #FEF2E0;
+transform: skew(0deg,5deg );
+  height: 100%;
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  transform: rotateY(-30deg);
+
+}
+.left-btn:hover{
+  background: rgba(57, 57, 55, 0.5);  
+
+
+}
+.middle-btn{
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  background: rgba(7, 7, 4, 0.50);  
+  backdrop-filter: blur(20px);
+  color: #FEF2E0;
+  transition: all 0.2s;
+
+}
+.middle-btn:hover{
+  background: rgba(57, 57, 55, 0.5);  
+
+}
+.right-btn{
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  background: rgba(7, 7, 4, 0.50);  
+  backdrop-filter: blur(20px);
+  transform-origin: left;
+  color: #FEF2E0;
+  transform: skew(0deg,5deg );
+  height: 100%;
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  transform: rotateY(30deg);
+
+}
+
+ .right-btn:hover{
+  background: rgba(57, 57, 55, 0.5);  
+
+}
+
+.stake-border{
+  border-radius: 15px;
+border: 1px solid rgba(255, 255, 255, 0.20);
+background: rgba(7, 7, 4, 0.50);
+backdrop-filter: blur(15px);
+}
+
+.nav-text{
+  background: linear-gradient(90deg, #E7DBC9 0%, rgba(231, 219, 201, 0.00) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.image-border{
+  border-radius: 18px;
+border: 1px solid rgba(255, 255, 255, 0.50);
+background: rgba(7, 7, 4, 0.50);
+backdrop-filter: blur(15px);
+}
+.btn-border{
+  border-radius: 6px;
+border: 1px solid #E7DBC9;
+background: rgba(0, 0, 0, 0.50);
+backdrop-filter: blur(20px);
+}
+.btn-unactive{
+  border-radius: 6px;
+  border: 1px solid rgba(231, 219, 201, 0.50);
+  background: rgba(0, 0, 0, 0.50);
+  backdrop-filter: blur(20px); 
+}
+
+.btn-border:hover{
+  background: rgba(57, 57, 55, 0.5);  
+
+}
+
+.navlink{
+transition: all 1s ease;
+padding:10px 30px;
+border-radius: 8px;
+border: 0.5px solid transparent;
+
+}
+.navlink:hover{
+  border: 0.5px solid #E7DBC9;
+  /* box-shadow: 0px 0px 15px 0px #E7DBC9; */
+  /* border-radius: 18px; */
+  background-color:#4e4e4c80;
+}
+
+
+.css-1fzpoyk{
+/* border: 2px solid red !important; */
+opacity: 1 !important;
+/* transform: skew(20deg) !important; */
+}
+.css-1fzpoyk  img{
+  height: 300px;
+  width: 250px;
+object-fit: cover !important;
+
+}
+.Card_card__w2_6R img{
+  margin-top: 0 !important;
+}
+
+
+/* styles.css */
+/* styles.css */
+.slick-prev,
+.slick-next {
+  background-color: #890b0b;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  border: 2px solid red;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 20px;
+}
+
+.slick-next {
+  right: 20px;
+}
+
+.parent{
+  width: 200px;
+  /* height: 300px; */
+  border-radius:18px;
+  perspective: 500px;
+  border-radius: 18px;
+ 
+}
+.active-img{
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  background: rgba(7, 7, 4, 0.50);
+  backdrop-filter: blur(15px);
+}
+
+.left-img{
+  transform-origin: right;
+  color: #FEF2E0;
+  transform: skew(0deg,5deg );
+    height: 100%;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    transform: rotateY(-30deg);
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(7, 7, 4, 0.50);
+    backdrop-filter: blur(15px);
+}
+.right-img{
+  transform-origin: left;
+  color: #FEF2E0;
+  transform: skew(0deg,5deg );
+    height: 100%;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    transform: rotateY(30deg);
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(7, 7, 4, 0.50);
+    backdrop-filter: blur(15px);
+}
+   
+
+@media screen and (max-width:425px) {
+  .scane{
+    height: 70px;
+    width: 100px;
+  }
+ /* .parent{
+  width: 200px;
+ } */
+ .slick-prev{
+  left: 40% !important;
+  top: 120% !important;
+   }
+   .slick-next{
+    left: 50% !important;
+    top: 120% !important;
+     }
+
+}
+@media screen and (max-width:768px) {
+  /* body{
+    background: #060404;
+  } */
+  .slick-prev{
+    left: 45% !important;
+    top: 110% !important;
+     }
+     .slick-next{
+      left: 55% !important;
+      top: 110% !important;
+       }
+       .dapp-bg{
+        background-image: url(/images/dapp-mob-bg.png);
+        background-size: 100% 100%;
+        height: auto;
+      }
+      
+}
+/* =============== */
+.parallax-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Adjust the height as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-image {
+  background-image: url('/images/langding-page/landing-hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* Add this CSS to your stylesheet or a CSS module */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-image: url(/images/landing-page/landing-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.1s ease-in-out;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/landing-page/landing-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.5s ease-in-out;
+}
+/* +++++++++++++++++ */
+.card-parant{
+  perspective: 1000px;
+
+}
+.left-card{
+backdrop-filter: blur(20px);
+transform-origin: right;
+color: #FEF2E0;
+transform: skew(0deg,5deg );
+  height: 100%;
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  transform: rotateY(-30deg);
+
+}
+.right-card{
+ backdrop-filter: blur(20px);
+transform-origin: left;
+color: #FEF2E0;
+transform: skew(0deg,3deg );
+  height: 100%;
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  transform: rotateY(30deg);
+}

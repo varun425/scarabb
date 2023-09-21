@@ -1,0 +1,5 @@
+@media screen and ((min-width:1270px) and (max-width:1400px)) {
+    .act-inside {
+        margin-inline: 50px;
+    }
+}

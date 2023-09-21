@@ -1,0 +1,10 @@
+.horus {
+    font-family: HORUS;
+}
+
+@media screen and (min-width: 770px) and (max-width: 1900px) {
+    .containerLandingMenu {
+        width: 100;
+        margin-top: 20px;
+    }
+  }

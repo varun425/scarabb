@@ -1,0 +1,134 @@
+.parallax {
+  background-color: #0c0c0c;
+  /* height:100vh; */
+  width: 100%;
+  margin-inline: auto;
+  /* overflow-x: hidden; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 3000px) {
+  .becomeGod-font > h5 {
+    font-size: 5rem;
+  }
+  .becomeGod-p {
+    font-size: 14px;
+    line-height: 3rem
+  }
+  .becomeGod-btn {
+    font-size: 20px;
+    padding: 2rem;
+    border-radius: 1rem
+  }
+}
+
+.mainn-bg {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/images/landing-page/become-bg.png);
+  background-size: 100% 100%;
+}
+
+.left-right-hero {
+  position: absolute;
+  bottom: -0%;
+  background-image: url(/images/landing-page/left-right-hero.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and ((min-width:1024px) and (max-width:1530px)) {
+  .left-right-hero {
+    background-image: url(/images/landing-page/left-right-hero.png);
+    background-size: 100% 100%;
+    width: 105%;
+    height: 500px !important;
+  }
+}
+
+@media screen and ((min-width:1531px) and (max-width:1930px)) {
+  .left-right-hero {
+    background-image: url(/images/landing-page/left-right-hero.png);
+    /* background-size: 100% 100%; */
+    width: 110%;
+    height: 650px !important;
+  }
+}
+
+.mob-back {
+  background-image: url(/images/landing-page/mob-become-bg.png);
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.horus {
+  font-family: HORUS;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 121.3%;
+  /* 48.52px */
+  letter-spacing: 2px;
+  background: linear-gradient(114deg, #E7DBC9 62.09%, rgba(231, 219, 201, 0.00) 149.48%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: difference;
+}
+
+.side-hero {
+  position: absolute;
+}
+
+.responsive-div {
+  width: 390px;
+  height: 690px;
+  /* Set the height to a percentage of the parent's height */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  /* border: 1px solid red; */
+  /* background-size: 100% 100%; */
+}
+
+.left-div {
+  left: 0;
+  /* background-image: url(/images/landing-page/l.png); */
+}
+
+.right-div {
+  right: 0;
+  /* background-image: url(/images/landing-page/r.png); */
+}
+
+.imgl,
+.imgr {
+  height: 600px;
+  width: auto;
+}
+
+.tablel {
+  height: 500px;
+  width: auto;
+}
+
+.tabler {
+  height: 400px;
+  width: auto;
+}
+
+
+
+@media screen and (min-width:1930px) {
+  .mygap{
+    max-width: 1900px;
+    left: 50%;
+    translate: -50% 0;
+
+  }
+}

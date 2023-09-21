@@ -1,0 +1,35 @@
+.horus {
+  font-family: HORUS;
+}
+
+#progressBar::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+#progressBar::-webkit-progress-value {
+  background-color: #E7DBC9;
+}
+
+.tooltip {
+  visibility: hidden;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+  bottom: 80%;
+  left: 35%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.saleNotStartedToolTip:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltiptext {
+  position: relative;
+  z-index: 10;
+}
